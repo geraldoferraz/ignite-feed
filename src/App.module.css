@@ -1,0 +1,22 @@
+/*  MANIPULACAO DE SIDEBAR COM O POST */
+.wrapper{
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 256px 1fr; /*Primeira coluna com largura fixa de 256 e a segunda coluna com tamanho flexivel --> usar com display: grid*/
+    gap: 2rem; /*Distancia ente as colunas*/
+    align-items: flex-start; /*Alinhar com o topo*/
+
+}
+
+@media (max-width: 768px){ /*quando a tela tiver um tamanho ate 768px so vamos ter uma coluna */
+    html{
+        font-size: 87.5%;
+    }
+
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+}

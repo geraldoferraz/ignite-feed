@@ -1,0 +1,10 @@
+.header{
+    background-color: var(--grey-800);
+    display: flex; /*Alinhamento dos lados, emcima e embaixo*/
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.header img{
+    height: 3rem;
+}
